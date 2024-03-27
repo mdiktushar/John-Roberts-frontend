@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.navRoute a.active {
+    font-weight: 500;
+}
