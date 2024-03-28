@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Best Author Awards 2012",
+      "image": "./img/awards/author-book-store-awards-logo-1.svg",
+      "description": "Winner of the prestigious Best Author Awards in 2012."
+    },
+    {
+      "name": "World's #1 Best-selling Book",
+      "image": "./img/awards/author-book-store-awards-logo-2.svg",
+      "description": "Author of the world's best-selling book of all time."
+    },
+    {
+      "name": "NYT Best-selling Author 2014",
+      "image": "./img/awards/author-book-store-awards-logo-3.svg",
+      "description": "New York Times best-selling author in the year 2014."
+    },
+    {
+      "name": "Best Author Awards 2018",
+      "image": "./img/awards/author-book-store-awards-logo-4.svg",
+      "description": "Recipient of the esteemed Best Author Awards in 2018."
+    }
+  ]
+  
