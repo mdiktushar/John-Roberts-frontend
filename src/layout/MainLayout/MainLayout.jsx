@@ -4,9 +4,11 @@ import Navbar from "../shared/Navbar";
 
 const MainLayout = () => {
   return (
-    <div >
+    <div>
       <Navbar />
-      <Outlet />
+      <div className="px-9">
+        <Outlet />
+      </div>
     </div>
   );
 };

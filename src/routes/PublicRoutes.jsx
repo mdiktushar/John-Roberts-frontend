@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout/MainLayout";
-import Home from "../pages/public/Home";
+import Home from "../pages/public/Home/Home";
 
 const PublicRoutes = createBrowserRouter([
   {
@@ -10,6 +10,7 @@ const PublicRoutes = createBrowserRouter([
       {
         path: `/`,
         element: <Home />,
+        loader: async () => await fetch(`./data/books.json`),
       },
     ],
   },
