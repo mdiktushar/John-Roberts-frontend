@@ -15,15 +15,15 @@ const NewRealised = ({ book }) => {
         </p>
 
         <div className="flex flex-row justify-center md:justify-start gap-5">
-          <button class="btn bg-[#5f4ecb] text-white hover:bg-[#3a2f81] md:first-line:px-7 text-base">
+          <button className="btn bg-[#5f4ecb] text-white hover:bg-[#3a2f81] md:first-line:px-7 text-base">
             Bye Now
           </button>
-          <button class="btn border-solid border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white md:px-7 text-base">
+          <button className="btn border-solid border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white md:px-7 text-base">
             Rede Sample
           </button>
         </div>
       </div>
-      <div className="px-[30px]">
+      <div className="px-[30px] mt-10 md:mt-0">
         <img className="w-[250px] md:w-[350px] h-[350px] lg:w-[400px] lg:h-[550px]" src={book.image} alt={book.title} />
       </div>
     </div>

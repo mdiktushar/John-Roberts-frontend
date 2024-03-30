@@ -7,32 +7,19 @@ const Home = () => {
   // Loading Books
   const books = useLoaderData();
   // Loaders
-  const [authorLoader, setAuhorLoader] = useState(true);
+  const [authorLoader, setAuhorLoader] = useState(false);
   // datas
   const [author, setAuthor] = useState(null);
 
   useEffect(() => {
-    const featchAuthor = async () => {
-      try {
-        const response = await fetch(``);
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = response.json();
-        setAuthor(data);
-        setAuhorLoader(false);
-      } catch (error) {
-        console.error(`Error featching data: ${error}`);
-        setAuhorLoader(false);
-      }
-    };
-
-    featchAuthor();
-
-    // Cleanup function (optional)
-    return () => {
-      // perform cleanup here if necessary
-    };
+    try {
+      fetch(`./data/author.json`)
+      .then((res) => res.json())
+      .then((data) => setAuthor(data)).then(() => setAuhorLoader(true))
+    } catch(exception) {
+      console.error(exception)
+    }
+    
   }, []);
 
   return (
@@ -41,7 +28,7 @@ const Home = () => {
       <NewRealised book={books[books.length - 1]} />
 
       {/* Passing author data to Biography component */}
-      {!authorLoader && <Biography author={author} />}
+      {authorLoader && <Biography author={author} />}
     </>
   );
 };
