@@ -11,22 +11,22 @@ const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base hover:text-[#59bafa]`} to={`books`}>
+        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`books`}>
           Books
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base hover:text-[#59bafa]`} to={`about-author`}>
+        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`about-author`}>
           About Author
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base hover:text-[#59bafa]`} to={`blog`}>
+        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`blog`}>
           Blog
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base hover:text-[#59bafa]`} to={`contact`}>
+        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`contact`}>
           Contact
         </NavLink>
       </li>
@@ -34,7 +34,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 pt-5">
+    <div className="navbar bg-base-100 pt-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

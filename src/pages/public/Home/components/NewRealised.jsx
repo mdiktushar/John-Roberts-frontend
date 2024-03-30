@@ -7,10 +7,10 @@ const NewRealised = ({ book }) => {
         <p className="mt-8 text-xs font-bold text-[#5f4ecb] tracking-[0.3em]">
           NEW RELEASE
         </p>
-        <h1 className="libre-baskerville-bold text-7xl leading-relaxed">
+        <h1 className="libre-baskerville-bold text-gray-800 text-7xl leading-relaxed">
           {book.title}
         </h1>
-        <p className="max-w-[472px]">
+        <p className="max-w-[472px] text-gray-500">
           {book.description.slice(0, 150) + ` ...`}
         </p>
 
