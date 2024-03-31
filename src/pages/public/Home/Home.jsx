@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import NewRealised from "./components/NewRealised";
 import Biography from "./components/Biography";
+import Awards from "./components/Awards/Awards";
 
 const Home = () => {
   // Loading Books
@@ -29,6 +30,8 @@ const Home = () => {
 
       {/* Passing author data to Biography component */}
       {authorLoader && <Biography author={author} />}
+      {/* Awards Section */}
+      <Awards />
     </>
   );
 };

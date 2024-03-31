@@ -5,28 +5,33 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const navRoutes = (
     <>
+    <li>
+    <Link to={``} className="btn btn-ghost text-xl md:hidden">
+          <img src={logo} alt="" />
+        </Link>
+    </li>
       <li>
-        <NavLink className={`text-base hover:text-[#59bafa]`} to={`/`}>
+        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`/`}>
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`books`}>
+        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`books`}>
           Books
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`about-author`}>
+        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`about-author`}>
           About Author
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`blog`}>
+        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`blog`}>
           Blog
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-500 hover:text-[#59bafa]`} to={`contact`}>
+        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`contact`}>
           Contact
         </NavLink>
       </li>
@@ -55,12 +60,12 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 navRoute"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 navRoute bg-[#5f4ecb] bg-opacity-25"
           >
             {navRoutes}
           </ul>
         </div>
-        <Link to={``} className="btn btn-ghost text-xl">
+        <Link to={``} className="btn btn-ghost text-xl hidden md:block">
           <img src={logo} alt="" />
         </Link>
       </div>
