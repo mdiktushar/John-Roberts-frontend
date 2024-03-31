@@ -24,7 +24,7 @@ const Biography = ({ author }) => {
 
         <div className="flex flex-row justify-start ">
           <button className="btn border-solid border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white md:px-7 text-base">
-            Rede Sample
+            Read More
           </button>
         </div>
       </div>
