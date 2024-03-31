@@ -5,11 +5,6 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const navRoutes = (
     <>
-    <li>
-    <Link to={``} className="btn btn-ghost text-xl md:hidden">
-          <img src={logo} alt="" />
-        </Link>
-    </li>
       <li>
         <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`/`}>
           Home
@@ -65,8 +60,8 @@ const Navbar = () => {
             {navRoutes}
           </ul>
         </div>
-        <Link to={``} className="btn btn-ghost text-xl hidden md:block">
-          <img src={logo} alt="" />
+        <Link to={``} className="btn btn-ghost text-xl">
+          <img  src={logo} alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
