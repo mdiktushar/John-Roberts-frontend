@@ -27,3 +27,8 @@
     font-style: italic;
   }
   /* Header Font End ........ */
+
+
+  .TimeNewRoman {
+    font-family: "Times New Roman", Times, serif;
+  }

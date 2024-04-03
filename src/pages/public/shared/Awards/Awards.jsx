@@ -22,7 +22,7 @@ const Awards = () => {
     return () => {};
   }, []);
 
-  console.log(awards);
+  // console.log(awards);
 
   return (
     <>
