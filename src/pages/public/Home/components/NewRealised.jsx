@@ -2,7 +2,7 @@ import React from "react";
 
 const NewRealised = ({ book }) => {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center md:justify-between gap-20 md:gap-0">
+    <div className="flex flex-col-reverse md:flex-row items-center md:justify-between gap-20 px-[10px] md:gap-0">
       <div className="flex flex-col items-center md:items-start gap-10 max-w-[700px]">
         <p className="mt-8 text-xs font-bold text-[#5f4ecb] tracking-[0.3em] text-center md:text-left">
           NEW RELEASE

@@ -13,7 +13,7 @@ const BestSellingBooks = () => {
   }, []);
   console.log(books[0]);
   return (
-    <div className="mt-[55px]">
+    <div className="mt-[55px] px-[10px]">
       <div className="text-center max-w-[700px] mx-auto">
         <h2 className="TimeNewRoman font-semibold text-3xl text-gray-900 mb-2">
           Best Selling Books
@@ -30,7 +30,7 @@ const BestSellingBooks = () => {
         ))}
       </div>
       <div className="flex justify-center mt-[55px] mb-[55px]">
-        <button class="btn btn-outline border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white ">
+        <button className="btn btn-outline border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white ">
           Shop All Books
         </button>
       </div>
