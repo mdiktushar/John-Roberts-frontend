@@ -4,6 +4,7 @@ import NewRealised from "./components/NewRealised";
 import Biography from "./components/Biography";
 import Awards from "../shared/Awards/Awards";
 import BestSellingBooks from "./components/BestSellingBooks";
+import Subscribe from "../shared/Subscribe/Subscribe";
 
 
 const Home = () => {
@@ -36,6 +37,8 @@ const Home = () => {
       <Awards />
       {/* Best Selling Books */}
       <BestSellingBooks />
+      {/* Subscribe Component */}
+      <Subscribe />
     </>
   );
 };

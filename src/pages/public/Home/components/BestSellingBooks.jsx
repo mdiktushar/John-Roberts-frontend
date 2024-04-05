@@ -29,7 +29,7 @@ const BestSellingBooks = () => {
           <Book key={index} book={item} />
         ))}
       </div>
-      <div className="flex justify-center mt-[55px]">
+      <div className="flex justify-center mt-[55px] mb-[55px]">
         <button class="btn btn-outline border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white ">
           Shop All Books
         </button>
