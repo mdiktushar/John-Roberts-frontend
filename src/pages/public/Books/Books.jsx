@@ -1,12 +1,34 @@
-import React from 'react';
-import Banner from './components/Banner';
+import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Banner from "./components/Banner";
+import NewRealised from "../shared/NewRealised/NewRealised";
+import Subscribe from "../shared/Subscribe/Subscribe";
+import Book from "../shared/Book/Book";
 
 const Books = () => {
-    return (
-        <>
-            <Banner />
-        </>
-    );
+  // Loading Books
+  const books = useLoaderData();
+  return (
+    <>
+      <Banner />
+      {/** Passing the last book form the arrar object  */}
+      <NewRealised book={books[books.length - 1]} />
+    <div className="my-[100px]">
+        <h3 className="text-center mb-[50px] TimeNewRoman text-5xl text-gray-800">More Books</h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-4">
+    {
+        books.map((item, index) => (
+            <Book key={index} book={item} />
+        ))
+    }
+    </div>
+    </div>
+    
+
+      {/* Subscribe Component */}
+      <Subscribe />
+    </>
+  );
 };
 
 export default Books;

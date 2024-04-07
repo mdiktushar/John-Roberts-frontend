@@ -13,7 +13,7 @@ const BestSellingBooks = () => {
   }, []);
   console.log(books[0]);
   return (
-    <div className="mt-[55px] px-[10px]">
+    <div className="mt-[55px] px-[30px]]">
       <div className="text-center max-w-[700px] mx-auto">
         <h2 className="TimeNewRoman font-semibold text-3xl text-gray-900 mb-2">
           Best Selling Books

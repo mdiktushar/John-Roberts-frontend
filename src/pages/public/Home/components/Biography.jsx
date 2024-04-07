@@ -3,7 +3,7 @@ import React from "react";
 const Biography = ({ author }) => {
   console.log(author);
   return (
-    <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-20 px-[10px] mt-[100px] lg:mt-[200px]">
+    <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-20 px-[30px] mt-[100px] lg:mt-[200px]">
       <div className="mt-10 md:mt-0">
         <img
           className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[600px] lg:h-[600px]"
