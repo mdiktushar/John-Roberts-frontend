@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import NewRealised from "./components/NewRealised";
+import NewRealised from "../shared/NewRealised/NewRealised";
 import Biography from "./components/Biography";
 import Awards from "../shared/Awards/Awards";
 import BestSellingBooks from "./components/BestSellingBooks";
