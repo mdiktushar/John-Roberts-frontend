@@ -8,15 +8,15 @@ import Book from "../shared/Book/Book";
 const Books = () => {
   // Loading Books
   const books = useLoaderData();
-  const [banner, setBanner] = useState(
-    {
-      title: `Books`,
-      description: ` Porttitor in nibh id aliquet quam aliquam aliquet pulvinar integer dolor quis elementum, dui cursus nisi, nunc viverra nulla fringilla.`,
-    },
-  );
+  const [banner, setBanner] = useState({
+    title: `Books`,
+    description: ` Porttitor in nibh id aliquet quam aliquam aliquet pulvinar integer dolor quis elementum, dui cursus nisi, nunc viverra nulla fringilla.`,
+  });
   return (
     <>
+      {/** Passing the data to banner component  */}
       <TitleBanner banner={banner} />
+
       {/** Passing the last book form the arrar object  */}
       <NewRealised book={books[books.length - 1]} />
       <div className="my-[100px]">
