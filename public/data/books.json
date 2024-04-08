@@ -55,6 +55,17 @@
     "tags": ["chocolate", "gift", "gourmet", "sweets"]
   },
   {
+    "title": "Ark Forging",
+    "image": "./img/books/ArkForging.jpg",
+    "price": 132.99,
+    "quantity": 10,
+    "sale": 1,
+    "shipping": "Free Shipping",
+    "description": "Crafted from premium leather, our Ark Forging exudes timeless style and durability. Featuring a sleek design with tailored fit, it's perfect for any occasion. The soft inner lining ensures comfort, while the zippered pockets add functionality. Make a statement with this versatile piece that never goes out of style.",
+    "category": "Fantasy",
+    "tags": ["jacket", "leather", "fashion", "classic"]
+  },
+  {
     "title": "The Throned Mirror",
     "image": "./img/books/TheThronedMirror.jpg",
     "price": 159.99,
@@ -75,16 +86,6 @@
     "description": "Crafted from premium leather, our The Sons of the Empire exudes timeless style and durability. Featuring a sleek design with tailored fit, it's perfect for any occasion. The soft inner lining ensures comfort, while the zippered pockets add functionality. Make a statement with this versatile piece that never goes out of style.",
     "category": "Fantasy",
     "tags": ["jacket", "leather", "fashion", "classic"]
-  },
-  {
-    "title": "Ark Forging",
-    "image": "./img/books/ArkForging.jpg",
-    "price": 132.99,
-    "quantity": 10,
-    "sale": 1,
-    "shipping": "Free Shipping",
-    "description": "Crafted from premium leather, our Ark Forging exudes timeless style and durability. Featuring a sleek design with tailored fit, it's perfect for any occasion. The soft inner lining ensures comfort, while the zippered pockets add functionality. Make a statement with this versatile piece that never goes out of style.",
-    "category": "Fantasy",
-    "tags": ["jacket", "leather", "fashion", "classic"]
   }
+  
 ]

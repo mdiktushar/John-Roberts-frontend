@@ -2,10 +2,10 @@
   "name": "John Roberts",
   "image": "./img/author/author.jpg",
   "biography": "John Roberts is a prolific fiction writer who has captivated readers with his imaginative storytelling for over two decades. Born and raised in a small town in the heartland of America, Roberts developed a deep love for literature from an early age. His journey as a writer began when he penned his first short story at the tender age of twelve. Since then, he has honed his craft, weaving intricate plots and creating memorable characters that resonate with audiences across the globe.\n\nRoberts's writing style is characterized by its rich prose and keen attention to detail. He has a unique ability to transport readers to fantastical worlds filled with magic and wonder. Whether it's exploring the depths of space aboard a starship or delving into the mysteries of ancient civilizations, Roberts's stories are always infused with a sense of adventure and discovery.\n\nIn addition to his work as a novelist, Roberts is also an avid traveler and researcher. He draws inspiration from his journeys to far-flung corners of the globe, incorporating elements of different cultures and landscapes into his stories. From the bustling streets of Tokyo to the serene beauty of the Scottish Highlands, Roberts's writing is a testament to the richness and diversity of the world we live in.",
-  "number of books": 19,
+  "number_of_books": 19,
   "awards": 4,
   "copies_sold": "100K+",
-  "Quotes": "Elementum neque nulla mauris faucibus lorem nisl, eget quis duis amet lobortis non enim viverra feugiat vitae.",
+  "quotes": "Elementum neque nulla mauris faucibus lorem nisl, eget quis duis amet lobortis non enim viverra feugiat vitae.",
   "achivements": [
     {
       "year": 1986,

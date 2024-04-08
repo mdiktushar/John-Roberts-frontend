@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import TitleBanner from "../shared/TitleBanner/TitleBanner";
 import Subscribe from "../shared/Subscribe/Subscribe";
 import Awards from "../shared/Awards/Awards";
+import Photo from "./components/Photo";
 
 const AboutAuthor = () => {
   // loading data
@@ -16,6 +17,7 @@ const AboutAuthor = () => {
   return (
     <div>
       <TitleBanner banner={banner} />
+      <Photo data={author} />
       <Awards />
       <Subscribe />
     </div>
