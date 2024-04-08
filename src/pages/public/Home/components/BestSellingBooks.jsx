@@ -11,7 +11,7 @@ const BestSellingBooks = () => {
       .then((data) => setBooks(data))
       .then(() => setLoading(false));
   }, []);
-  console.log(books[0]);
+
   return (
     <div className="mt-[55px] px-[30px]]">
       <div className="text-center max-w-[700px] mx-auto">

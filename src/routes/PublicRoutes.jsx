@@ -22,7 +22,7 @@ const PublicRoutes = createBrowserRouter([
       {
         path: 'about-author',
         element: <AboutAuthor />,
-        loader: async () => await fetch(`./data/books.json`),
+        loader: async () => await fetch(`./data/author.json`),
       }
     ],
   },

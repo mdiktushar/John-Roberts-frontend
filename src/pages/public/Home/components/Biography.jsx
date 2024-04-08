@@ -1,7 +1,7 @@
 import React from "react";
 
 const Biography = ({ author }) => {
-  console.log(author);
+
   return (
     <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 md:gap-20 px-[30px] mt-[100px] lg:mt-[200px]">
       <div className="mt-10 md:mt-0">
