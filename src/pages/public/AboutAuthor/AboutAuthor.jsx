@@ -4,6 +4,7 @@ import TitleBanner from "../shared/TitleBanner/TitleBanner";
 import Subscribe from "../shared/Subscribe/Subscribe";
 import Awards from "../shared/Awards/Awards";
 import Photo from "./components/Photo";
+import Intorduction from "./components/Intorduction";
 
 const AboutAuthor = () => {
   // loading data
@@ -18,6 +19,7 @@ const AboutAuthor = () => {
     <div>
       <TitleBanner banner={banner} />
       <Photo data={author} />
+      <Intorduction biography={author.biography} />
       <Awards />
       <Subscribe />
     </div>
