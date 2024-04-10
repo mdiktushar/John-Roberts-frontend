@@ -6,6 +6,7 @@ import Awards from "../shared/Awards/Awards";
 import Photo from "./components/Photo";
 import Intorduction from "./components/Intorduction";
 import Count from "./components/Count";
+import Achivements from "./components/Achivements/Achivements";
 
 const AboutAuthor = () => {
   // loading data
@@ -25,6 +26,7 @@ const AboutAuthor = () => {
       <hr className="mt-[50px] mx-[30px] border-solid border-gray-300 border-1"/>
       <Awards />
       <hr className="my-[50px] mx-[30px] border-solid border-gray-300 border-1"/>
+      <Achivements achivements={author.achivements} />
       <Subscribe />
     </div>
   );

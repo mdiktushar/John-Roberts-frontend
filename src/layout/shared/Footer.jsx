@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="md:hidden mx-10" />
-      <p className="text-white font-semibold text-center">
+      <p className="text-white text-xs text-center">
         Copyright © 2024 Md. Imrul Kayes
       </p>
     </div>
