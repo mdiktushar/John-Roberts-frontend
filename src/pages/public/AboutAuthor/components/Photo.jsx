@@ -14,7 +14,7 @@ const Photo = ({ data }) => {
         />
         <img className="w-[180px] md:w-[320px] " src={image} alt="" />
       </div>
-      <div className="max-w-fit md:max-w-[150px] lg:max-w-[400px] flex flex-col gap-5">
+      <div className="max-w-full md:max-w-[150px] lg:max-w-[400px] flex flex-col gap-5">
         <ImQuotesLeft style={{ color: "#5f4ecb", fontSize: "24px" }} />
         <p className="max-w-[150px] text-lg text-gray-500 font-semibold">{quotes}</p>
         <p className="text-base text-gray-500 font-semibold tracking-[0.3em]">{name}</p>

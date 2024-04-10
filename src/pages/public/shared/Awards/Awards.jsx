@@ -30,7 +30,6 @@ const Awards = () => {
         <></>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-[30px] mt-[55px]">
-          <hr className="mb-[20px] md:hidden" />
           {awards.map((item, index) => (
             <Award key={index} award={item} />
           ))}

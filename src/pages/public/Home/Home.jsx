@@ -33,6 +33,8 @@ const Home = () => {
 
       {/* Passing author data to Biography component */}
       {authorLoader && <Biography author={author} />}
+      {/* horizontal line */}
+      <hr className="mb-[20px] mx-[30px] mt-[55px] md:hidden" />
       {/* Awards Section */}
       <Awards />
       {/* Best Selling Books */}
