@@ -1,32 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/img/navbar/siteLogo.svg";
 import { Link, NavLink } from "react-router-dom";
 
+import { CiSearch } from "react-icons/ci";
+import { FiShoppingCart } from "react-icons/fi";
+
 const Navbar = () => {
+  const [numberOfItems, setNumberOfItems] = useState(0);
+  const [cost, setCost] = useState(0);
+
+  const handelSearch = (event) => {
+    // Prevent the default behavior of form submission in React
+    event.preventDefault();
+    // Retrieve the value of the input field
+    console.log(event.target.elements.search.value);
+  };
+
   const navRoutes = (
     <>
       <li>
-        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`/`}>
+        <NavLink
+          className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`}
+          to={`/`}
+        >
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`books`}>
+        <NavLink
+          className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`}
+          to={`books`}
+        >
           Books
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`about-author`}>
+        <NavLink
+          className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`}
+          to={`about-author`}
+        >
           About Author
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`blog`}>
+        <NavLink
+          className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`}
+          to={`blog`}
+        >
           Blog
         </NavLink>
       </li>
       <li>
-        <NavLink className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`} to={`contact`}>
+        <NavLink
+          className={`text-base text-gray-900 lg:text-gray-500 hover:text-[#5f4ecb]`}
+          to={`contact`}
+        >
           Contact
         </NavLink>
       </li>
@@ -34,77 +62,80 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 pt-10">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <>
+      <div className="navbar bg-base-100 pt-10">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 navRoute bg-[#5f4ecb] bg-opacity-70"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+              {navRoutes}
+            </ul>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 navRoute bg-[#5f4ecb] bg-opacity-70"
-          >
-            {navRoutes}
-          </ul>
+          <Link to={``} className="btn btn-ghost text-xl">
+            <img src={logo} alt="" />
+          </Link>
         </div>
-        <Link to={``} className="btn btn-ghost text-xl">
-          <img  src={logo} alt="" />
-        </Link>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 navRoute">{navRoutes}</ul>
-      </div>
-      <div className="navbar-end">
-        <button className="btn btn-ghost btn-circle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 navRoute">{navRoutes}</ul>
+        </div>
+        <div className="navbar-end">
+          {/* search */}
+          <button
+            className="btn btn-ghost btn-circle"
+            onClick={() => document.getElementById("my_modal_2").showModal()}
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
-        </button>
-        <button className="btn btn-ghost btn-circle">
-          <div className="indicator">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-              />
-            </svg>
-            <span className="badge badge-xs badge-primary indicator-item"></span>
-          </div>
-        </button>
+            <CiSearch style={{ color: `#5f4ecb`, fontSize: "24px" }} />
+          </button>
+          {/* cost */}
+          <button className="btn btn-ghost btn-circle text-base text-[#5f4ecb]">
+            {cost.toFixed(2) + `$`}
+          </button>
+          {/* cart */}
+          <button className="btn btn-ghost btn-circle">
+            <div className="indicator">
+              <FiShoppingCart style={{ color: `#5f4ecb`, fontSize: "24px" }} />
+              <span className="badge badge-xs badge-primary border-[#5f4ecb] text-[#5f4ecb] indicator-item">
+                {numberOfItems}
+              </span>
+            </div>
+          </button>
+        </div>
       </div>
-    </div>
+      {/* search modal */}
+      <dialog id="my_modal_2" className="modal">
+        <div className="modal-box bg-white">
+          <form onSubmit={handelSearch}>
+            <label className="input input-bordered flex items-center gap-2">
+              <input type="text" className="grow border-gray-200 " name="search" id="search" placeholder="Search" />
+              <kbd className="kbd kbd-sm">
+                <CiSearch />
+              </kbd>
+            </label>
+          </form>
+        </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+    </>
   );
 };
 
