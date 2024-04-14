@@ -7,7 +7,7 @@ const Blog = () => {
   const blogs = useLoaderData();
   return (
     <>
-      <div className="flex flex-col gap-1 my-1">
+      <div className="mb-20">
         {blogs.map((item, index) => (
           <Content key={index} blog={item} />
         ))}
