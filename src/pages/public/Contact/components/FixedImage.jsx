@@ -22,7 +22,7 @@ const FixedImage = () => {
           </p>
         </div>
         <div>
-          <a className="btn btn-outline w-[200px] h-[80px] border-white text-white text-xl hover:bg-white hover:text-black">
+          <a className="btn btn-outline w-[200px] h-[80px] border-white text-white text-xl hover:bg-white hover:text-black" href="#contact_component">
             Contact Me
           </a>
         </div>
