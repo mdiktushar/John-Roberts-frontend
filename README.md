@@ -2,6 +2,11 @@
 
 Introducing the John Roberts Web Application, your one-stop destination for accessing the complete collection of literary works penned by the esteemed author, John Roberts. Dive into a vast repository of insightful narratives, compelling stories, and profound insights, all conveniently organized and accessible at your fingertips.
 
+Live Website:
+<br/>
+View: https://johnroberts.netlify.app/
+<br/>
+
 ## Installation
 
 1. Clone the GitHub repository:
@@ -40,3 +45,7 @@ Introducing the John Roberts Web Application, your one-stop destination for acce
 | `React`       |
 | `TailwindCSS` |
 | `Daisyui`     |
+
+## Authors
+
+- [@mdiktushar](https://www.github.com/mdiktushar)
