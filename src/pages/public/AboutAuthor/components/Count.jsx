@@ -26,8 +26,8 @@ const Count = ({ number_of_books, awards, copies_sold }) => {
   return (
     <div>
       <div className="flex justify-center px-[30px]">
-        <div className="grid grid-cols-2 lg:grid-cols-3 max-w-[700px] ">
-          <InView as="div" onChange={handleSoldChange}>
+        <div className="grid grid-cols-2 lg:grid-cols-3 max-w-[700px] gap-10 lg:gap-1 ">
+          <InView as="div" className="col-span-2 lg:col-span-1" onChange={handleSoldChange}>
             <div className="col-span-2 lg:col-span-1 min-w-28 text-center">
               <h1 className="text-5xl font-bold text-gray-600">
                 <CountUp end={sold} duration={5} />
