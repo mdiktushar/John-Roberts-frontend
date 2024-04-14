@@ -40,7 +40,7 @@ const Content = ({ blog }) => {
           Read More...
         </button>
       </div>
-
+      {/* Modal */}
       {isOpen && (
         <dialog className="modal" open>
           <div className="modal-box bg-white w-11/12 max-w-5xl">
