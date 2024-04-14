@@ -3,6 +3,7 @@ import MainLayout from "../layout/MainLayout/MainLayout";
 import Home from "../pages/public/Home/Home";
 import Books from "../pages/public/Books/Books";
 import AboutAuthor from "../pages/public/AboutAuthor/AboutAuthor";
+import Blog from "../pages/public/Blog/Blog";
 
 const PublicRoutes = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const PublicRoutes = createBrowserRouter([
         path: 'about-author',
         element: <AboutAuthor />,
         loader: async () => await fetch(`./data/author.json`),
+      },
+      {
+        path: 'blog',
+        element: <Blog />,
+        loader: async () => await fetch(`./data/blogs.json`),
       },
     ],
   },
