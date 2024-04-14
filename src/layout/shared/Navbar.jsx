@@ -105,18 +105,18 @@ const Navbar = () => {
             <CiSearch style={{ color: `#5f4ecb`, fontSize: "24px" }} />
           </button>
           {/* cost */}
-          <button className="btn btn-ghost btn-circle text-base text-[#5f4ecb]">
+          <Link className="btn btn-ghost btn-circle text-base text-[#5f4ecb]">
             {cost.toFixed(2) + `$`}
-          </button>
+          </Link>
           {/* cart */}
-          <button className="btn btn-ghost btn-circle">
+          <Link className="btn btn-ghost btn-circle">
             <div className="indicator">
               <FiShoppingCart style={{ color: `#5f4ecb`, fontSize: "24px" }} />
               <span className="badge badge-xs badge-primary border-[#5f4ecb] text-[#5f4ecb] indicator-item">
                 {numberOfItems}
               </span>
             </div>
-          </button>
+          </Link>
         </div>
       </div>
       {/* search modal */}

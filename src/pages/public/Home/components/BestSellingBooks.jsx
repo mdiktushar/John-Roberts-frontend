@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Book from "../../shared/Book/Book";
+import { Link } from "react-router-dom";
 
 const BestSellingBooks = () => {
   const [loading, setLoading] = useState(true);
@@ -30,9 +31,9 @@ const BestSellingBooks = () => {
         ))}
       </div>
       <div className="flex justify-center mt-[55px] mb-[55px]">
-        <button className="btn btn-outline border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white ">
+        <Link to={'books'} className="btn btn-outline border-[#5f4ecb] text-[#5f4ecb] hover:bg-[#5f4ecb] hover:text-white ">
           Shop All Books
-        </button>
+        </Link>
       </div>
     </div>
   );
