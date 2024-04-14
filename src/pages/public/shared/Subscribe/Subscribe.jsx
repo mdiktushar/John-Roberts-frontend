@@ -19,7 +19,7 @@ const Subscribe = () => {
       </p>
       <form
         onSubmit={handleSubscribe}
-        className="flex flex-row gap-3 justify-center"
+        className="flex flex-col md:flex-row gap-3 justify-center"
       >
         <input
           type="text"

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TitleBanner from "../shared/TitleBanner/TitleBanner";
 import Subscribe from "../shared/Subscribe/Subscribe";
+import FixedImage from "./components/FixedImage";
 
 const Contact = () => {
   const [banner, setBanner] = useState({
@@ -12,6 +13,8 @@ const Contact = () => {
       {/** Passing the data to banner component  */}
       <TitleBanner banner={banner} />
 
+
+      <FixedImage />
 
       {/* Subscribe Component */}
       <Subscribe />
