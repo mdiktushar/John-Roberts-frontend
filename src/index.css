@@ -10,6 +10,7 @@ html {
 /* Nav Bar Start .......... */
 .navRoute a.active {
   font-weight: 500;
+  color: #5f4ecb;
 }
 /* Nav Bar End ............ */
 
