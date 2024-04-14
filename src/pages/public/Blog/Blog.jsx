@@ -8,7 +8,7 @@ const Blog = () => {
   return (
     <>
       {/* passing blogs to Content component */}
-      <div className="mb-20">
+      <div className="mb-20 flex flex-col gap-1">
         {blogs.map((item, index) => (
           <Content key={index} blog={item} />
         ))}
