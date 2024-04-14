@@ -4,6 +4,7 @@ import Home from "../pages/public/Home/Home";
 import Books from "../pages/public/Books/Books";
 import AboutAuthor from "../pages/public/AboutAuthor/AboutAuthor";
 import Blog from "../pages/public/Blog/Blog";
+import Contact from "../pages/public/Contact/Contact";
 
 const PublicRoutes = createBrowserRouter([
   {
@@ -16,19 +17,27 @@ const PublicRoutes = createBrowserRouter([
         loader: async () => await fetch(`./data/books.json`),
       },
       {
-        path: 'books',
+        path: "books",
         element: <Books />,
         loader: async () => await fetch(`./data/books.json`),
       },
       {
-        path: 'about-author',
+        path: "about-author",
         element: <AboutAuthor />,
         loader: async () => await fetch(`./data/author.json`),
       },
       {
-        path: 'blog',
+        path: "blog",
         element: <Blog />,
         loader: async () => await fetch(`./data/blogs.json`),
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "*",
+
       },
     ],
   },

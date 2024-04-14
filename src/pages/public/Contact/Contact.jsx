@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import TitleBanner from "../shared/TitleBanner/TitleBanner";
+import Subscribe from "../shared/Subscribe/Subscribe";
 
 const Contact = () => {
   const [banner, setBanner] = useState({
