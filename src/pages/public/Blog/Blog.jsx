@@ -7,12 +7,13 @@ const Blog = () => {
   const blogs = useLoaderData();
   return (
     <>
+      {/* passing blogs to Content component */}
       <div className="mb-20">
         {blogs.map((item, index) => (
           <Content key={index} blog={item} />
         ))}
       </div>
-
+      {/* Subscribe Component */}
       <Subscribe />
     </>
   );
